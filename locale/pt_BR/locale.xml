@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/themes/ojsidg/locale/pt_BR/locale.xml
+  *
+  * Copyright (c) 2017-2017 Instituto Federal de Roraima
+ * Copyright (c) 2007-2017 Fábio Rodrigues dos Santos
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+
+<locale name="pt_BR" full_name="Português (Brasil)">
+	<message key="plugins.themes.ojsidg.name">Tema Padrão do Governo Federal Brasileiro</message>
+	<message key="plugins.themes.ojsidg.description">Este tema implementa a Identidade Digital do Governo - IDG.</message>
+
+	<message key="plugins.themes.ojsidg.options.ojsidgTheme.label">Selecione um tema</message>
+	<message key="plugins.themes.ojsidg.options.ojsidgTheme.description">Após selecionar o tema clique em Salvar para as alterações entrarem em efeito</message>
+
+	<message key="plugins.themes.ojsidg.options.ojsidgTheme.verde">Tema Verde</message>
+	<message key="plugins.themes.ojsidg.options.ojsidgTheme.amarelo">Tema Amarelo</message>
+	<message key="plugins.themes.ojsidg.options.ojsidgTheme.azul">Tema Azul</message>
+	<message key="plugins.themes.ojsidg.options.ojsidgTheme.branco">Tema Branco</message>
+
+	<message key="plugins.themes.ojsidg.options.site_name.label">Nome do Site</message>
+	<message key="plugins.themes.ojsidg.options.site_name.description">Nome que irá aparecer no cabeçalho do site</message>
+
+	<message key="plugins.themes.ojsidg.options.organization.label">Organização</message>
+	<message key="plugins.themes.ojsidg.options.organization.description">Organização que o site pertence, também irá aparecer no cabeçalho</message>
+
+	<message key="plugins.themes.ojsidg.options.subordination.label">Subordinação</message>
+	<message key="plugins.themes.ojsidg.options.subordination.description">Orgão ou Ministério ao qual a organização está vinculada</message>
+
+</locale>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/themes/ojsidg/version.xml
+  *
+  * Copyright (c) 2017-2017 Instituto Federal de Roraima
+  * Copyright (c) 2007-2017 Fábio Rodrigues dos Santos
+  * Email: fabio.santos@ifrr.edu.br
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Plugin version information.
+  -->
+<version>
+	<application>ojsidg</application>
+	<type>plugins.themes</type>
+	<release>1.0.0.0</release>
+	<date>2017-09-14</date>
+	<lazy-load>1</lazy-load>
+	<class>IDGThemePlugin</class>
+</version>

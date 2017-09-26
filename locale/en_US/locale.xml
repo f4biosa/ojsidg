@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/themes/ojsidg/locale/pt_BR/locale.xml
+  *
+  * Copyright (c) 2017-2017 Instituto Federal de Roraima
+ * Copyright (c) 2007-2017 Fábio Rodrigues dos Santos
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.themes.ojsidg.name">Default Theme</message>
+	<message key="plugins.themes.ojsidg.description">This theme implements the default theme.</message>
+</locale>
