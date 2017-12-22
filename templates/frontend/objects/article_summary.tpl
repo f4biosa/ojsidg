@@ -17,48 +17,60 @@
 	{assign var="showAuthor" value=true}
 {/if}
 
-<div class="article-summary media">
-	{if $article->getLocalizedCoverImage()}
-		<div class="cover media-left">
-			<a href="{url page="article" op="view" path=$articlePath}" class="file">
-				<img class="media-object" src="{$article->getLocalizedCoverImageUrl()|escape}">
-			</a>
-		</div>
-	{/if}
+<tr class="article-summary media">
+    {if $article->getLocalizedCoverImage()}
+	<td>
 
-	<div class="media-body">
+			<div class="cover media-left">
+				<a href="{url page="article" op="view" path=$articlePath}" class="file">
+					<img class="media-object" src="{$article->getLocalizedCoverImageUrl()|escape}">
+				</a>
+			</div>
+
+	</td>
+    {/if}
+	<td>
 		<h3 class="media-heading">
 			<a href="{url page="article" op="view" path=$articlePath}">
-				{$article->getLocalizedTitle()|strip_unsafe_html}
+                {$article->getLocalizedTitle()|strip_unsafe_html}
 			</a>
 		</h3>
+	</td>
+	<td>
+        {if $showAuthor || $article->getPages() || ($article->getDatePublished() && $showDatePublished)}
 
-		{if $showAuthor || $article->getPages() || ($article->getDatePublished() && $showDatePublished)}
-
-			{if $showAuthor}
+            {if $showAuthor}
 				<div class="meta">
-					{if $showAuthor}
+                    {if $showAuthor}
 						<div class="authors">
-							{$article->getAuthorString()}
+                            {$article->getAuthorString()}
 						</div>
-					{/if}
+                    {/if}
 				</div>
-			{/if}
+            {/if}
 
-			{* Page numbers for this article *}
-			{if $article->getPages()}
+            {* Page numbers for this article *}
+            {if $article->getPages()}
 				<p class="pages">
-					{$article->getPages()|escape}
+                    {$article->getPages()|escape}
 				</p>
-			{/if}
+            {/if}
 
 			<div class="btn-group" role="group">
-				{foreach from=$article->getGalleys() item=galley}
-					{include file="frontend/objects/galley_link.tpl" parent=$article}
-				{/foreach}
+                {foreach from=$article->getGalleys() item=galley}
+                    {include file="frontend/objects/galley_link.tpl" parent=$article}
+                {/foreach}
 			</div>
-		{/if}
-	</div>
+        {/if}
+	</td>
+</tr>
+
+
+
+	<div class="media-body">
+
+
+
 
 	{call_hook name="Templates::Issue::Issue::Article"}
 </div><!-- .article-summary -->

@@ -38,9 +38,9 @@
 
 	{* Announcements *}
 	{if $numAnnouncementsHomepage && $announcements|count}
-		<section class="cmp_announcements media">
-			<header class="page-header">
-				<h2>
+		<section class="cmp_announcements media module">
+			<header class="page-header outstanding-header">
+				<h2 class="outstanding-title">
 					{translate key="announcement.announcements"}
 				</h2>
 			</header>
@@ -49,7 +49,10 @@
 					{if $smarty.foreach.announcements.iteration > $numAnnouncementsHomepage}
 						{php}break;{/php}
 					{/if}
+
 					{include file="frontend/objects/announcement_summary.tpl" heading="h3"}
+
+
 				{/foreach}
 			</div>
 		</section>
@@ -58,9 +61,9 @@
 
 	{* Latest issue *}
 	{if $issue}
-		<section class="current_issue">
-			<header class="page-header">
-				<h2>
+		<section class="current_issue module">
+			<header class="page-header outstanding-header">
+				<h2 class="outstanding-title">
 					{translate key="journal.currentIssue"}
 				</h2>
 			</header>

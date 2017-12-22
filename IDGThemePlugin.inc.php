@@ -31,11 +31,6 @@ class IDGThemePlugin extends ThemePlugin {
             )
         ));
 
-        $this->addOption('site_name', 'text', array(
-            'label' => 'plugins.themes.ojsidg.options.site_name.label',
-            'description' => 'plugins.themes.ojsidg.options.site_name.description',
-        ));
-
 
         $this->addOption('organization', 'text', array(
             'label' => 'plugins.themes.ojsidg.options.organization.label',
@@ -99,7 +94,6 @@ class IDGThemePlugin extends ThemePlugin {
         $templateMgr = $args[0];
 
         $templateMgr->assign('organization', $this->getOption('organization'));
-        $templateMgr->assign('site_name', $this->getOption('site_name'));
         $templateMgr->assign('subordination', $this->getOption('subordination'));
     }
 

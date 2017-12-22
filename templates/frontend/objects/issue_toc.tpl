@@ -98,23 +98,33 @@
 
 	{* Articles *}
 	<div class="sections">
+		<div class="panel panel-default">
 		{foreach name=sections from=$publishedArticles item=section}
-			<section class="section">
+
+
 				{if $section.articles}
-					{if $section.title}
-						<div class="page-header">
-							<h2>
-								<small>{$section.title|escape}</small>
-							</h2>
-						</div>
-					{/if}
-					<div class="media-list">
+
+					<!-- Default panel contents -->
+					<div class="panel-heading">{if $section.title}
+								<h2>
+                                    {$section.title|escape}
+								</h2>
+                        {/if}
+					</div>
+
+						<!-- Table -->
+						<table class="table table-striped">
+							<tr>
+								<th>Informações</th><th>Baixar</th>
+							</tr>
 						{foreach from=$section.articles item=article}
 							{include file="frontend/objects/article_summary.tpl"}
 						{/foreach}
-					</div>
+						</table>
+
 				{/if}
-			</section>
+
 		{/foreach}
+		</div>
 	</div><!-- .sections -->
 </div><!-- .issue-toc -->
