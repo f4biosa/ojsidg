@@ -37,9 +37,19 @@ class IDGThemePlugin extends ThemePlugin {
             'description' => 'plugins.themes.ojsidg.options.organization.description',
         ));
 
+        $this->addOption('organizationURL', 'text', array(
+            'label' => 'plugins.themes.ojsidg.options.organizationURL.label',
+            'description' => 'plugins.themes.ojsidg.options.organizationURL.description',
+        ));
+
         $this->addOption('subordination', 'text', array(
             'label' => 'plugins.themes.ojsidg.options.subordination.label',
             'description' => 'plugins.themes.ojsidg.options.subordination.description',
+        ));
+
+        $this->addOption('subordinationURL', 'text', array(
+            'label' => 'plugins.themes.ojsidg.options.subordinationURL.label',
+            'description' => 'plugins.themes.ojsidg.options.subordinationURL.description',
         ));
 
         $this->addStyle('bootstrap', 'styles/bootstrap.less');
@@ -94,7 +104,10 @@ class IDGThemePlugin extends ThemePlugin {
         $templateMgr = $args[0];
 
         $templateMgr->assign('organization', $this->getOption('organization'));
+        $templateMgr->assign('organizationURL', $this->getOption('organizationURL'));
+
         $templateMgr->assign('subordination', $this->getOption('subordination'));
+        $templateMgr->assign('subordinationURL', $this->getOption('subordinationURL'));
     }
 
 }

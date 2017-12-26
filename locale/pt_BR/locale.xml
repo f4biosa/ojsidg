@@ -23,13 +23,16 @@
 	<message key="plugins.themes.ojsidg.options.ojsidgTheme.azul">Tema Azul</message>
 	<message key="plugins.themes.ojsidg.options.ojsidgTheme.branco">Tema Branco</message>
 
-	<message key="plugins.themes.ojsidg.options.site_name.label">Nome do Site</message>
-	<message key="plugins.themes.ojsidg.options.site_name.description">Nome que irá aparecer no cabeçalho do site</message>
-
 	<message key="plugins.themes.ojsidg.options.organization.label">Organização</message>
 	<message key="plugins.themes.ojsidg.options.organization.description">Organização que o site pertence, também irá aparecer no cabeçalho</message>
 
+	<message key="plugins.themes.ojsidg.options.organizationURL.label">Organização Link</message>
+	<message key="plugins.themes.ojsidg.options.organizationURL.description">Link para o site da organização</message>
+
 	<message key="plugins.themes.ojsidg.options.subordination.label">Subordinação</message>
-	<message key="plugins.themes.ojsidg.options.subordination.description">Orgão ou Ministério ao qual a organização está vinculada</message>
+	<message key="plugins.themes.ojsidg.options.subordination.description">Site ao qual pertence</message>
+
+	<message key="plugins.themes.ojsidg.options.subordinationURL.label">Subordinação Link</message>
+	<message key="plugins.themes.ojsidg.options.subordinationURL.description">Link para o site subordinado</message>
 
 </locale>

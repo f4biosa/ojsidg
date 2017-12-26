@@ -16,7 +16,10 @@
 		{translate key="archive.archives"}
 	{/if}
 {/capture}
+
+<header style="padding-top: 0">
 {include file="frontend/components/header.tpl" pageTitleTranslated=$pageTitle}
+</header>
 
 <div id="main-content" class="page page_issue_archive">
 	{include file="frontend/components/breadcrumbs.tpl" currentTitle=$pageTitle}
@@ -45,4 +48,4 @@
 	{/if}
 </div>
 
-{include file="common/frontend/footer.tpl"}
+{include file="frontend/components/footer.tpl"}

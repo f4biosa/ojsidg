@@ -14,7 +14,9 @@
  * @uses $issueGalleys array Galleys for the entire issue
  * @uses $showGalleyLinks bool Show galley links to users without access?
  *}
+<header style="padding-top: 0">
 {include file="frontend/components/header.tpl" pageTitleTranslated=$issueIdentification}
+</header>
 
 <div id="main-content" class="page page_issue">
 
@@ -31,4 +33,4 @@
 
 </div>
 
-{include file="common/frontend/footer.tpl"}
+{include file="frontend/components/footer.tpl"}
