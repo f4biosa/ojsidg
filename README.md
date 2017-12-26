@@ -1,5 +1,7 @@
-Interface HTML para novo padrão do governo federal vr. 1.0
-Iniciativa do Instituto Federal de Educação Ciência e Tecnologia de Roraima.
+# OJS IDG
+
+- Tema de Identidade do Governo para o Open Journals System
+- Componente HTML/CSS para novo padrão do governo federal vr. 1.0
 
 ### Instalação e Configuração passo a passo 
 1. Baixe o arquivo e descompacte em plugins/themes
@@ -14,4 +16,4 @@ Iniciativa do Instituto Federal de Educação Ciência e Tecnologia de Roraima.
 Observações:
 --------------------------
 - Fábio Rodrigues dos Santos, https://github.com/f4biosa
--- Analista de TI do Intituto Federal de Roraima, lotado na Reitoria
+- Analista de TI do Intituto Federal de Roraima, lotado na Reitoria
