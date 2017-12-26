@@ -35,4 +35,6 @@
 	<message key="plugins.themes.ojsidg.options.subordinationURL.label">Subordinação Link</message>
 	<message key="plugins.themes.ojsidg.options.subordinationURL.description">Link para o site subordinado</message>
 
+	<message key="user.login.rememberUsernameAndPassword">Lembrar Usuário e Senha</message>
+
 </locale>
